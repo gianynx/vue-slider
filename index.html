@@ -16,13 +16,13 @@
         <div class="slider w-100 vh-100 d-flex justify-content-center align-items-center">
             <div class="slides_container rounded-3 position-relative">
                 <img class="w-100 h-100 rounded-2" :src="slides[currentSlide].image" :alt="slides[currentSlide].title">
-                <button class="position-absolute top-50 start-0 translate-middle" @click="goNext"><i class="fa-solid fa-angles-left"></i></button>
-                <button class="position-absolute top-50 start-100 translate-middle" @click="goBack"><i class="fa-solid fa-angles-right"></i></button>
+                <button class="position-absolute top-50 start-0 translate-middle rounded-3 p-2" @click="goBack"><i class="fa-solid fa-angles-left"></i></button>
+                <button class="position-absolute top-50 start-100 translate-middle rounded-3 p-2" @click="goNext"><i class="fa-solid fa-angles-right"></i></button>
             </div>
             <div class="thumbs_container">
-                <!-- Il loop for assegna ogni oggetto dell'array slides alla variabile image -->
+                <!-- Il loop for assegna ogni oggetto dell'array slides alla variabile slide -->
                 <div class="thumb" :class="{'active': currentSlide === index}" v-for="(slide, index) in slides" :key="index">
-                    <img class="w-100 h-100 rounded-2" :src="slide.image" :alt="slide.title">
+                    <img class="w-100 h-100 rounded-3" :src="slide.image" :alt="slide.title">
                 </div>
             </div>
         </div>
