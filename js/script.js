@@ -38,10 +38,17 @@ createApp({
                     image: 'img/03.webp',
                     title: 'Colosseo'
                 }
-            ]
+            ],
+            currentSlide: 0
         }
     },
     methods: {
-
+        goNext() {
+            this.currentSlide++;
+            // console.log(this.currentSlide);
+        },
+        goBack() {
+            this.currentSlide--;
+        }
     }
 }).mount('#app');

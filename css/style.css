@@ -1,0 +1,21 @@
+body {
+    background-image: linear-gradient(to right, #8EA3BF , #73563D, #8EA3BF);
+}
+
+.slider {
+    width: 1000px;
+    height: 600px;
+}
+
+button {
+    z-index: 1000;
+    border-style: none;
+    padding: 12px;
+    background-color: #283959;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: #69688C;
+}
