@@ -45,10 +45,15 @@ createApp({
     methods: {
         goNext() {
             this.currentSlide++;
-            console.log(this.currentSlide);
+            if (this.currentSlide >= this.images.length) {
+                this.currentSlide = 0;
+            }
         },
         goBack() {
             this.currentSlide--;
+            if (this.currentSlide <= 0) {
+                this.currentSlide = this.images.length;
+            }
         }
     }
 }).mount('#app');
