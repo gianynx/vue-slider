@@ -51,8 +51,8 @@ createApp({
         },
         goBack() {
             this.currentSlide--;
-            if (this.currentSlide <= 0) {
-                this.currentSlide = this.images.length;
+            if (this.currentSlide < 0) {
+                this.currentSlide = this.images.length - 1;
             }
         }
     }
