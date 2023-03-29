@@ -40,12 +40,12 @@ createApp({
                 }
             ],
             currentSlide: 0
-        }
+        };
     },
     methods: {
         goNext() {
             this.currentSlide++;
-            // console.log(this.currentSlide);
+            console.log(this.currentSlide);
         },
         goBack() {
             this.currentSlide--;
