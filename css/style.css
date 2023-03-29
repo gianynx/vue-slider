@@ -7,6 +7,29 @@ body {
     height: 600px;
 }
 
+.slides_container {
+    width: 800px;
+    height: 100%;
+}
+
+.thumbs_container {
+    width: 200px;
+    height: 100%;
+}
+
+.thumb {
+    width: 100%;
+    height: calc(100% / 3);
+    opacity: 0.5;
+}
+
+.thumb.active {
+    display: block;
+    opacity: 1;
+    border: 2px solid white;
+    padding: 10px;
+}
+
 button {
     z-index: 1000;
     border-style: none;

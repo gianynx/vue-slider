@@ -25,7 +25,7 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
-            images: [
+            slides: [
                 {
                     image: 'img/01.webp',
                     title: 'Colosseo'
@@ -40,19 +40,19 @@ createApp({
                 }
             ],
             currentSlide: 0
-        };
+        }
     },
     methods: {
         goNext() {
             this.currentSlide++;
-            if (this.currentSlide >= this.images.length) {
+            if (this.currentSlide >= this.slides.length) {
                 this.currentSlide = 0;
             }
         },
         goBack() {
             this.currentSlide--;
             if (this.currentSlide < 0) {
-                this.currentSlide = this.images.length - 1;
+                this.currentSlide = this.slides.length - 1;
             }
         }
     }
