@@ -28,8 +28,7 @@ createApp({
                     title: 'Colosseo6'
                 }
             ],
-            currentSlide: 0,
-            // interval: null
+            currentSlide: 0
         }
     },
     methods: {
@@ -44,12 +43,6 @@ createApp({
             if (this.currentSlide < 0) {
                 this.currentSlide = this.slides.length - 1;
             }
-        },
-        // mouseover() {
-        //     clearInterval(this.autoplay);
-        // }
-    },
-    // mounted() {
-    //     this.autoplay = setInterval(this.goNext, 2000)
-    // }
+        }
+    }
 }).mount('#app');
